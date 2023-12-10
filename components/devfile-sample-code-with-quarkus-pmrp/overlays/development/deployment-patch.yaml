@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-pmrp
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-81-tenant/test-rhtap-81-app/devfile-sample-code-with-quarkus-pmrp@sha256:999da0f9b4afeb82fff46c5be035ba583f3542dd2e65b5985e5485d2c272d342
+        name: my-java-quarkus
+        resources: {}
+status: {}
